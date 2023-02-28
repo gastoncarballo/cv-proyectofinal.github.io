@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/estilo2.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Proyecto Final</title>
+    <script src="javascript/eventos.js"></script>
+    <meta property="og:title" content="CV Proyecto Final" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content=" img/Gaston.jpg" />
+    <meta property="og:description" content="Curriculum Viate - Proyecto" />
+  </head>
+  <!-- Nav lateral -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="#personal"></a>
+      <img
+        class="boton"
+        src="img/personal.png"
+        id="pers"
+        onmousemove="enAmarillo1()"
+        onmouseleave="enNegro1()"
+        alt="informacion personal"
+      />
+    </a>
+    <a href="#laboral">
+      <img
+        class="boton"
+        src="img/laboral.png"
+        id="labo"
+        onmousemove="enAmarillo2()"
+        onmouseleave="enNegro2()"
+        alt="informacion laboral"
+      />
+    </a>
+    <a href="#educacion">
+      <img
+        class="boton"
+        src="img/estudios.png"
+        id="estu"
+        onmousemove="enAmarillo4()"
+        onmouseleave="enNegro4()"
+        alt="estudios"
+      />
+    </a>
+  </nav>
+  <body>
+    <!-- Acá empieza lo principal del CV -->
+    <div class="degrade">
+      <div class="grilla">
+        <div class="intro">
+          <div class="nombres">Gaston Carballo</div>
+          <div class="bajada">Desarrollador Front End</div>
+          <div class="descripcion">
+            Expectativas: Conformar un buen grupo de trabajo, crecer en la
+            empresa y poder desarrolar las habilidades aprendidas como aquellas
+            por aprender, poder practicar mi hobby con mis compañeros de
+            trabajos, lo cuál haría una mas fácil integración y desarrollo de la
+            personalidad
+          </div>
+          <a href="https://github.com/gastoncarballo">
+            <img
+              src="img/github.png"
+              class="icono"
+              id="gi"
+              onmousemove="enAmarillo6()"
+              onmouseleave="enNegro6()"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/gast%C3%B3n-carballo-63b391261/">
+            <img
+              src="img/linkedin.png"
+              class="icono"
+              id="li"
+              onmousemove="enAmarillo7()"
+              onmouseleave="enNegro7()"
+            />
+          </a>
+        </div>
+        <img src="img/Gaston.jpg" class="perfil" />
+      </div>
+    </div>
+
+    <!-- Acá termina lo principal del CV -->
+
+    <!-- Aquí muestro como se debería embeber VIDEOS particulares, AUDIOS y VIDEOS de YouTuve
+    VIDEO
+    <video width="320" height="240" controls>
+    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+    <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+    </video>
+    AUDIO
+    <audio controls>
+    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    VIDEOS de YouTuve
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cUcVOh-CxQY" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    También de esta forma demuestro como es un comentario en HTML,gracias-->
+
+    <!-- Contenido de CV -->
+
+    <div class="caja" id="personal">
+      <div class="titulo">Información Personal</div>
+      <div class="text">
+        <ul>
+          <li>Edad: 27</li>
+          <li>Residencia: Córdoba</li>
+          <li>Nacimiento: 7/5/1978</li>
+          <li>Nacionalidad: Argentina</li>
+          <li>Telefono: (746) 681-0144</li>
+          <li>E-mail: logan.nguyen@example.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="caja" id="laboral">
+      <div class="titulo">Experiencia Laboral</div>
+      <div class="text">
+        <ul>
+          <li>
+            Vendedor Celulares para la empresa CTI Móvil, durante 2 años, desde
+            el año 1998 hasta el 2000, Córdoba
+          </li>
+          <li>
+            Playero en la estación de servicio ACA, durante 1 año, desde el 2002
+            hasta el 2003, Río Negro
+          </li>
+          <li>
+            Atención al Público en la Farmacia AMUSIM, durante 7 años, desde el
+            2004 hasta el 2011, La Pampa
+          </li>
+          <li>
+            Seguridad Nacional, desde el año 2011 a la actualidad, Argentina
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="caja" id="educacion">
+      <div class="titulo">Estudios</div>
+      <div class="text">
+        <ul>
+          <li>Escuela Primaria Mariano Moreno Nº 143 - Santa Rosa, La Pampa</li>
+          <li>
+            Colegio Secundario Manuel Belgrano - San Carlos de Bariloche, Río
+            Negro
+          </li>
+          <li>
+            Curso Inicial Front-End Instituto Ticmas- Capital Federal, Buenos
+            Aires
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="vacio"></div>
+  </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
